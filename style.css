@@ -119,3 +119,20 @@ right: 100%;
     animation-duration: 1s;
     right: -85px;
   }
+
+
+  #botao{
+    width: 50px;
+    bottom: 0;
+    margin: 0 auto;
+    font-size: 18px;
+    right: 50%;
+    position: absolute;
+    color: #0c0c0c;
+    margin-bottom: 2px;
+    font-size: 18px;
+    background-color: hsl(127, 100%, 50%);
+    text-align: center;
+    padding: 30px 60px;  /* Aumente o padding para aumentar o tamanho do botão */
+ 
+}
