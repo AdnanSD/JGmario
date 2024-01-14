@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontuação de Tempo Vivo</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #pontuacao {
+      font-size: 2em;
+    }
+
+    #botoes {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="pontuacao">0 segundos</div>
+
+  <div id="botoes">
+    <button onclick="iniciarPontuacao()">Iniciar</button>
+    <button onclick="pararPontuacao()">Parar</button>
+    <button onclick="zerarPontuacao()">Zerar</button>
+  </div>
+
+  <script>
+    let pontuacao;
+    let segundosVivos = 0;
+
+    function atualizarPontuacao() {
+      document.getElementById('pontuacao').innerText = `${segundosVivos}`;
+    }
+
+    function iniciarPontuacao() {
+      pontuacao = setInterval(function () {
+        segundosVivos++;
+        atualizarPontuacao();
+      }, 1000);
+    }
+
+    function pararPontuacao() {
+      clearInterval(pontuacao);
+    }
+
+    function zerarPontuacao() {
+      segundosVivos = 0;
+      atualizarPontuacao();
+      pararPontuacao();
+    }
+  </script>
+</body>
+</html>
