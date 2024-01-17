@@ -139,17 +139,17 @@ gamePlano.classList.add('transicao-background');
 
  iniciarPontuacao();
 
-// function clicar(){
-//     jump();
-//     som();
-// }
+
+ function clicar(){
+
+location.reload();
 
 
-// document.addEventListener('keydown', () => {
-    
-   
-//   });
+ }
 
+
+
+// Criterio que determina a interação do usuario como o game 
 document.addEventListener('DOMContentLoaded', function(){
 
  document.addEventListener('touchstart', handleEvent)

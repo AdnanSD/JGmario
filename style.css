@@ -121,18 +121,35 @@ right: 100%;
   }
 
 
-  #botao{
+.centroBotao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
+  #botao,
+#botao2 {
     width: 50px;
-    bottom: 0;
-    margin: 0 auto;
-    font-size: 18px;
-    right: 50%;
-    position: absolute;
-    color: #0c0c0c;
-    margin-bottom: 2px;
-    font-size: 18px;
-    background-color: hsl(127, 100%, 50%);
+    height: 50px;
+    padding: 0; /* Remova o padding para evitar distorções */
+    border-radius: 30%; /* Use 50% para um círculo perfeito */
+    display: inline-block; /* Coloca os botões em linha */
     text-align: center;
-    padding: 30px 60px;  /* Aumente o padding para aumentar o tamanho do botão */
- 
+    margin-right: 10px; /* Ajuste conforme necessário para espaçamento entre os botões */
+    color: #fafafafe;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    }
+
+#botao {
+    background-color: #fd0707fe;
+    border: 10px solid rgb(rgb(4, 0, 255), rgb(255, 0, 0), rgb(30, 255, 0));
+}
+
+#botao2 {
+    background-color: #0720fdfe;
+    border: 10px solid rgb(rgb(4, 0, 255), rgb(255, 0, 0), rgb(30, 255, 0));
 }
