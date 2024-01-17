@@ -139,13 +139,26 @@ gamePlano.classList.add('transicao-background');
 
  iniciarPontuacao();
 
-function clicar(){
-    jump();
-    som();
-}
+// function clicar(){
+//     jump();
+//     som();
+// }
 
 
 // document.addEventListener('keydown', () => {
     
    
 //   });
+
+document.addEventListener('DOMContentLoaded', function(){
+
+ document.addEventListener('touchstart', handleEvent)
+ document.addEventListener('keydown', handleEvent)
+
+ function handleEvent(){
+  jump();
+  som();
+
+ }
+
+})
