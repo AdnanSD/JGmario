@@ -2,8 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 
 }   
+
+
+body{
+    
+    background-image: url('tv-papelparede.jpg') ;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+   
+}
+
+
+
 
 #contador{
     text-align: center;
@@ -14,7 +29,7 @@
 
 
 .game-board{
-    width: 100%;
+    width: 80%;
     height: 500px;
     border-bottom: 10px solid #08ec00;
     margin: 0 auto;
@@ -22,6 +37,7 @@
     overflow: hidden;
     background: linear-gradient(#06bef6f6,#fffffffe);
     transition: background-image 0.5s ease-in-out;
+    
 }
 
 .game-board.transicao-background {

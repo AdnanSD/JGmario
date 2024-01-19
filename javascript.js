@@ -1,5 +1,5 @@
 // Adicionar um final 
-
+// adicionar elementtos que surja em intervalos especificos 
 
 // som efeito final
 const somFim=new Audio('somover.mp4')
